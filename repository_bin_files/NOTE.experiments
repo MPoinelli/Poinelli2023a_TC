@@ -1,0 +1,39 @@
+rifts experiments
+
+This directory contains initial, EXF and OBCS files (binary format)
+which can be created with the matlab routines below.
+
+BATHY (generated with 'rifts_draft_bathy.m'):
+Bathymetry:  'bathy_400x800.bin'
+
+ICEDRAFT (generated with 'rifts_draft_bathy.m'):
+Rift 0km: 'draft_rift0_400x800.bin' 'frontcirc_rift0_400x800.bin' 'frontcirc_rift0_400x800.bin'
+Rift 1km: 'draft_rift1_400x800.bin' 'frontcirc_rift1_400x800.bin' 'frontcirc_rift1_400x800.bin'
+Rift 2km: 'draft_rift2_400x800.bin' 'frontcirc_rift2_400x800.bin' 'frontcirc_rift2_400x800.bin'
+Rift 3km: 'draft_rift3_400x800.bin' 'frontcirc_rift3_400x800.bin' 'frontcirc_rift3_400x800.bin'
+
+INITIAL CONDITIONS (generated with 'rifts_TS.m'):
+cold profiles:   'THETA_a,c_400x800x70.bin' 'SALT_a,c_400x800x70.bin
+warm profiles:	 'THETA_d,f,h_400x800x70.bin' 'SALT_d,f,h_400x800x70.bin'
+
+OBCS (generated with 'rifts_OB_TS.m' for temperature&salinity and 'rifts_OB_UV_barotropic.m' for Uvel-Vvel):
+North-South (V flow)
+'OB(N-S)t_a,c_400x60x26.stable' 'OB(N-S)t_d,f,h_400x60x26.stable'
+'OB(N-S)s_a,c_400x60x26.stable' 'OB(N-S)s_d,f,h_400x60x26.stable'
+'OB(N-S)u_0ms_400x60x26.bin'
+'OB(N-S)v_001ms_400x60x26.bin' 'OB(N-S)v_005ms_400x60x26.bin' 'OB(N-S)v_01ms_400x60x26.bin'
+
+East (U flow)
+'OBEt_a,c_800x60x26.stable' 'OBEt_d,f,h_800x60x26.stable'
+'OBEs_a,c_800x60x26.stable' 'OBEs_d,f,h_800x60x26.stable'
+'OBEv_0ms_800x60x26.bin'
+'OBEu_001ms_800x60x26.bin' 'OBEu_005ms_800x60x26.bin' 'OBEu_01ms_800x60x26.bin'
+
+EXF (generated with 'rifts_EXF.m')
+'EXF_tair.testCaseRift'
+'EXF_qa.testCaseRift'
+'EXF_u10m.testCaseRift'
+'EXF_v10m.testCaseRift'
+'EXF_prate.testCaseRift'
+'EXF_lwd.testCaseRift'
+'EXF_swd.testCaseRift'
