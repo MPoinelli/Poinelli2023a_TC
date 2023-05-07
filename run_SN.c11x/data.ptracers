@@ -1,0 +1,14 @@
+# This set-up makes is supposed to immitate salt. That is, PTRACER(:,:,:,1)
+# should look exactly like S(:,:,:).
+ &PTRACERS_PARM01
+ PTRACERS_numInUse=1,
+# iTracerShelf=1,
+# iTracerSurface=2,
+# PTRACERS_shelfice=.TRUE.,
+# PTRACERS_surface=.TRUE.,
+ PTRACERS_advScheme=77,
+ PTRACERS_Iter0=0,
+ PTRACERS_startStepFwd(1)=47174400.,
+ PTRACERS_initialFile(1)='../repository_bin_files/ptracer_cavity.bin',
+# PTRACERS_initialFile(2)='../repository_bin_files/ptracer_south.bin',
+ &

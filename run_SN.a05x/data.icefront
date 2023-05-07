@@ -1,0 +1,18 @@
+# ===================================
+# | Parameters for ICEFRONT package |
+# ===================================
+ &ICEFRONT_PARM01
+ ICEFRONTdepthFile  = '../repository_bin_files/frontdepth_rift2_400x800.bin',
+ ICEFRONTlengthFile = '../repository_bin_files/frontcirc_rift2_400x800.bin',
+ applyIcefrontTendT = .TRUE.,
+ applyIcefrontTendS = .TRUE.,
+ &
+
+ &ICEFRONT_EXF_PARM02
+#  SGRunOffstartdate1 = 19920101,
+#  SGRunOffstartdate2 = 000000,
+#  SGRunOffperiod     = -12.,
+#  SGRunOffconst      = 0.,
+#  SGRunOff_inscal    = 1.,
+#  SGRunOffFile       = 'subglacial_runoff.150',
+&

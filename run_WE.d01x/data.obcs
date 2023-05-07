@@ -1,0 +1,48 @@
+# *****************************************
+# Open boundaries..
+# *****************************************
+ &OBCS_PARM01
+# OBCSfixTopo=.FALSE.,
+ OB_Jsouth=400*1,
+ OB_Jnorth=400*800,
+ OB_Ieast =800*400,
+#
+ useOBCSprescribe = .TRUE.,
+ useOBCSbalance = .TRUE.,
+ useOBCSsponge =.TRUE.,
+# useLinearSponge = .TRUE.,
+#
+ OBCS_balanceFacN = 1., 
+ OBCS_balanceFacS = 1.,
+ OBCS_balanceFacE = 0.,
+#
+ OBEsFile = '../repository_bin_files/OBEs_800x60x100.stable',
+ OBEtFile = '../repository_bin_files/OBEt_d_800x60x100.stable',
+ OBEuFile = '../repository_bin_files/OBEu_001ms_800x60x100.bin',
+ OBEvFile = '../repository_bin_files/OBEv_0ms_800x60x100.bin',
+#
+ OBNsFile = '../repository_bin_files/OBNs_400x60x100.stable',
+ OBNtFile = '../repository_bin_files/OBNt_d_400x60x100.stable',
+ OBNuFile = '../repository_bin_files/OBNu_0ms_400x60x100.bin',
+ OBNvFile = '../repository_bin_files/OBNv_0ms_400x60x100.bin',
+#
+ OBSsFile = '../repository_bin_files/OBSs_400x60x100.stable',
+ OBStFile = '../repository_bin_files/OBSt_d_400x60x100.stable',
+ OBSuFile = '../repository_bin_files/OBSu_0ms_400x60x100.bin',
+ OBSvFile = '../repository_bin_files/OBSv_0ms_400x60x100.bin',
+#
+# OBCS_monitorFreq= 600.,
+# OBCS_monSelect = 1,
+ &
+# *****************************************
+# Sponge Layer Parameters.
+# *****************************************
+ &OBCS_PARM03
+ Urelaxobcsinner=1296000.E0,
+ Urelaxobcsbound=43200.E0,
+#
+ Vrelaxobcsinner=1296000.E0,
+ Vrelaxobcsbound=43200.E0,
+#
+ spongeThickness=15, 
+&

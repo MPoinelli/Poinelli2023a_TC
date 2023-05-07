@@ -1,0 +1,14 @@
+# ===================================
+# | Parameters for SHELFICE package |
+# ===================================
+ &SHELFICE_PARM01
+ SHELFICEboundaryLayer = .TRUE.,
+ SHELFICEtopoFile='../repository_bin_files/draft_rift2_400x800.bin',
+# SHELFICEloadAnomalyFile = 'phi0surf.data',
+# useISOMIPTD = .TRUE.,
+ SHELFICEuseGammaFrict = .FALSE.,
+ no_slip_shelfice = .false.,
+ SHELFICEwriteState = .TRUE.,
+ SHELFICEheatTransCoeff=1e-4,
+ SHELFICEconserve=.TRUE.,
+&

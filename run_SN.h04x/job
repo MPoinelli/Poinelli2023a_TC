@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N rifts_SN.h04
+#PBS -q long
+#PBS -W group_list=g26209
+#PBS -l select=20:ncpus=20:model=ivy
+#PBS -l walltime=120:00:00
+#PBS -j oe
+#PBS -m abe
+
+module load comp-intel/2018.0.128
+module load mpi-sgi/mpt.2.14r19
+module load hdf4/4.2.12 hdf5/1.8.18_mpt netcdf/4.4.1.1_mpt
+
+export RUN_DIR=/nobackupp11/mpoinell/rifts/run_SN.h04
+
+cd $RUN_DIR
+mpiexec -np 400 ./mitgcmuv_rifts
