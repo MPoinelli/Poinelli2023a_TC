@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/637244021.svg)](https://zenodo.org/badge/latestdoi/637244021)
 # Supplementary code, data and model output for: _Can rifts alter ocean dynamics beneath ice shelves?_
 
 This repository contains the necessary code and input data to reproduce the MITgcm model output presented in:
